@@ -1,0 +1,14 @@
+  812  [2021-06-18 14:16:22] vi main.tf
+  813  [2021-06-18 14:16:53] terraform init
+  814  [2021-06-18 14:17:17] terraform apply
+  815  [2021-06-18 14:17:54] sudo systemctl start dockerd
+  816  [2021-06-18 14:17:56] sudo systemctl start docker
+  817  [2021-06-18 14:18:11] terraform apply
+  818  [2021-06-18 14:20:06] docker ps
+  819  [2021-06-18 14:20:20] terraform destroy
+  820  [2021-06-18 14:20:37] docker ps
+  821  [2021-06-18 14:20:46] docker system prune -a
+  822  [2021-06-18 14:20:54] ls
+  823  [2021-06-18 14:21:02] bash
+  824  [2021-06-18 14:21:07] history
+

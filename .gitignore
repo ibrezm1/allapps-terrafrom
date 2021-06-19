@@ -1,0 +1,7 @@
+secure/
+*.backup
+*.tfstate
+*.json
+/.terraform/
+**/.terraform/
+*.hcl

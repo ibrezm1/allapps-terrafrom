@@ -1,0 +1,915 @@
+    1  [2020-12-27 12:35:35] history1
+    2  [2020-12-27 12:35:55] history2
+    3  [2020-12-27 12:36:00] history
+    4  [2020-12-27 12:36:12] history
+    5  [2020-12-27 12:37:35] cat ~/. bash_history
+    6  [2020-12-27 12:37:39] cat ~/.bash_history
+    7  [2020-12-27 12:38:09] cat ~/.bash_history > bash_history.txt
+    8  [2020-12-27 12:38:11] ls
+    9  [2020-12-27 12:38:17] history
+   10  [2020-12-27 12:38:34] exit
+   11  [2020-12-27 12:38:38] exit
+   12  [2020-12-27 12:38:59] history
+   13  [2020-12-27 12:39:22] grep bash_history.txt shut
+   14  [2020-12-27 12:39:29] grep shutdown bash_history.txt 
+   15  [2020-12-27 12:39:37] sudo shutdown -h now
+   16  [2020-12-27 14:57:09] ls
+   17  [2020-12-27 14:57:16] history
+   18  [2020-12-27 14:59:00] sudo shutdown -h +60
+   19  [2020-12-27 14:59:08] date
+   20  [2020-12-27 14:59:26] shutdown -c
+   21  [2020-12-27 14:59:34] sudo shutdown -c
+   22  [2020-12-27 15:01:08] sudo shutdown -h +60
+   23  [2020-12-27 15:01:23] sudo shutdown -c
+   24  [2020-12-27 15:02:50] man shutdown
+   25  [2020-12-27 15:03:21] sudo shutdown -h +60
+   26  [2020-12-27 15:03:36] sudo shutdown -c
+   27  [2020-12-27 15:03:46] sudo shutdown -k -h +60
+   28  [2020-12-27 15:03:51] sudo shutdown -c
+   29  [2020-12-27 15:08:22] sudo crontab -e
+   30  [2020-12-27 15:11:14] date
+   31  [2020-12-27 15:11:30] history
+   32  [2020-12-27 15:12:05] ls
+   33  [2020-12-27 15:12:13] cd snap/
+   34  [2020-12-27 15:12:14] ls
+   35  [2020-12-27 15:12:21] cd lxd/
+   36  [2020-12-27 15:12:22] ls
+   37  [2020-12-27 15:12:26] cd common/
+   38  [2020-12-27 15:12:28] ls
+   39  [2020-12-27 15:12:31] cd ..
+   40  [2020-12-27 15:12:34] tree
+   41  [2020-12-27 15:12:47] cd current
+   42  [2020-12-27 15:12:48] ls
+   43  [2020-12-27 15:12:51] cd ..
+   44  [2020-12-27 15:12:55] cd 18150/
+   45  [2020-12-27 15:12:56] ls
+   46  [2020-12-27 15:12:59] cd ..
+   47  [2020-12-27 15:13:02] ls
+   48  [2020-12-27 15:13:05] cd ..
+   49  [2020-12-27 15:15:05] ls
+   50  [2020-12-27 15:15:13] ls
+   51  [2020-12-27 15:15:14] date
+   52  [2020-12-27 15:15:30] px -eaf
+   53  [2020-12-27 15:16:05] cat /var/log/syslog
+   54  [2020-12-27 15:16:14] sudo tail -10  /var/log/syslog
+   55  [2020-12-27 15:16:40] sudo shutdown -c
+   56  [2020-12-27 15:16:55] sudo bash
+   57  [2020-12-27 15:21:29] ls
+   58  [2020-12-27 15:21:32] date
+   59  [2020-12-27 15:26:03] ps -C shutdown
+   60  [2020-12-27 15:26:23] cat /run/systemd/shutdown/scheduled
+   61  [2020-12-27 15:27:37] cat /run/systemd/shutdown/scheduleddate --date @$(head -1 /run/systemd/shutdown/scheduled |cut -c6-15)
+   62  [2020-12-27 15:27:40] date --date @$(head -1 /run/systemd/shutdown/scheduled |cut -c6-15)
+   63  [2020-12-27 15:27:54] systemctl status systemd-shutdownd.servicesystemctl status systemd-shutdownd.service
+   64  [2020-12-27 15:27:56] systemctl status systemd-shutdownd.service
+   65  [2020-12-27 15:28:10] cat /run/systemd/shutdown/scheduled
+   66  [2020-12-27 15:28:38] sudo shutdown -h +60
+   67  [2020-12-27 15:28:41] cat /run/systemd/shutdown/scheduled
+   68  [2020-12-27 15:28:53] ps -C shutdown
+   69  [2020-12-27 15:29:13] sudo shutdown -c
+   70  [2020-12-27 15:29:28] history
+   71  [2020-12-27 15:29:39] sudo tail -10  /var/log/syslog
+   72  [2020-12-27 15:30:07] sudo bash
+   73  [2020-12-27 15:30:36] cat /run/systemd/shutdown/scheduled
+   74  [2020-12-27 15:31:38] sudo crontab -e
+   75  [2020-12-27 15:32:24] sudo shutdown -c
+   76  [2020-12-27 15:32:30] sudo crontab -e
+   77  [2020-12-27 15:32:59] ls
+   78  [2020-12-27 15:33:00] date
+   79  [2020-12-27 15:34:58] cat /run/systemd/shutdown/scheduled
+   80  [2020-12-27 15:35:17] sudo crontab -e
+   81  [2021-01-30 10:09:44] ls
+   82  [2021-01-30 10:09:59] sudo dmidecode | grep Version | sed -n '2p'
+   83  [2021-01-30 10:10:14] sudo dmidecode | grep 'SKU Number' | head -1
+   84  [2021-01-30 21:03:01] history | grep shutdown
+   85  [2021-01-30 21:03:12] sudo shutdown -h +60
+   86  [2021-01-30 21:17:54] ls
+   87  [2021-01-30 21:17:57] date
+   88  [2021-01-30 21:18:16] sudo shutdown -h +3
+   89  [2021-01-30 21:18:23] date
+   90  [2021-02-04 23:01:21] ls
+   91  [2021-02-04 23:01:25] htop
+   92  [2021-02-04 23:02:09] sudo apt install qemu-kvm libvirt-bin libvirt-doc
+   93  [2021-02-04 23:05:06] wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
+   94  [2021-02-04 23:06:11] sudo apt-get install cf-cli
+   95  [2021-02-04 23:06:24] echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+   96  [2021-02-04 23:06:34] wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
+   97  [2021-02-04 23:06:48] sudo apt-get update
+   98  [2021-02-04 23:07:34] sudo apt-get install cf-cli
+   99  [2021-02-04 23:08:34] cf
+  100  [2021-02-04 23:08:42] cf install-plugin cfdev
+  101  [2021-02-04 23:32:11] cf dev status
+  102  [2021-02-04 23:32:59] cf dev start
+  103  [2021-02-05 00:10:48] cf uninstall-plugin pcfdev
+  104  [2021-02-05 00:11:43] cf uninstall-plugin pccf dev stopfdev
+  105  [2021-02-05 00:11:44] cf dev stop
+  106  [2021-02-05 00:12:03] cf uninstall-plugin pcfdev
+  107  [2021-02-05 00:12:23] sudo apt-get uninstall cf-cli
+  108  [2021-02-05 00:12:29] sudo apt-get remove cf-cli
+  109  [2021-02-05 00:12:43] df -h
+  110  [2021-02-05 00:14:15] sudo apt-get remove cf-cli
+  111  [2021-02-05 00:15:04] find / -size +10M -ls
+  112  [2021-02-05 00:21:17] sudo find / -size +1000M -ls
+  113  [2021-02-05 00:22:31] cd /home/ibrezm/
+  114  [2021-02-05 00:22:45] rm -r .cfdev/
+  115  [2021-02-05 00:23:04] sudo find / -size +1000M -ls
+  116  [2021-02-05 00:23:16] ls
+  117  [2021-02-05 00:23:19] df -h
+  118  [2021-02-05 01:23:05] ls
+  119  [2021-02-05 01:23:08] docker ps
+  120  [2021-02-05 01:23:26] docker run hello-world
+  121  [2021-02-05 01:23:51] docker run busybox echo hi
+  122  [2021-02-05 01:24:21] docker run busybox ping google.com
+  123  [2021-02-05 01:24:46] docker ps
+  124  [2021-02-05 01:42:41] ls
+  125  [2021-02-05 01:42:49] docker system prune
+  126  [2021-02-08 22:47:20] ls
+  127  [2021-02-08 22:47:22] docker 
+  128  [2021-02-08 22:47:38] htop
+  129  [2021-02-08 22:48:18] docker run -d -p 8000:8000 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=password" --name splunk splunk/splunk:latest
+  130  [2021-02-08 22:51:14] docker ps
+  131  [2021-02-08 22:51:50] hostname
+  132  [2021-02-08 22:52:19] docker ps
+  133  [2021-02-08 22:52:44] telnet localhost:8000
+  134  [2021-02-08 22:52:52] telnet localhost 8000
+  135  [2021-02-08 22:53:11] docker ps
+  136  [2021-02-08 23:07:19] htop
+  137  [2021-02-08 23:28:54] hostname -a
+  138  [2021-02-08 23:28:56] hostname 
+  139  [2021-02-08 23:29:00] ifconfig
+  140  [2021-02-08 23:29:13] ipconfig
+  141  [2021-02-08 23:29:27] ping localhost
+  142  [2021-02-08 23:57:30] ifconfig
+  143  [2021-02-08 23:57:44] sudo apt-get install net-tools
+  144  [2021-02-09 00:00:56] ifconfig
+  145  [2021-02-09 00:01:10] ifconfig | grep 192
+  146  [2021-02-09 00:02:14] telnet 192.168.1.42 9997
+  147  [2021-02-09 00:03:24] docker ps
+  148  [2021-02-09 00:03:42] docker stop 0e62e6832927
+  149  [2021-02-09 00:03:51] docker ps
+  150  [2021-02-09 00:04:21] docker run -d -p 8000:8000 9997:9997 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=password" --name splunk splunk/splunk:latest
+  151  [2021-02-09 00:05:09] docker run -d -p 8000:8000 -p 9997:9997 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=password" --name splunk splunk/splunk:latest
+  152  [2021-02-09 00:05:43] docker system  prune -a
+  153  [2021-02-09 00:05:57] docker run -d -p 8000:8000 -p 9997:9997 -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=password" --name splunk splunk/splunk:latest
+  154  [2021-02-09 00:09:16] docker ps
+  155  [2021-02-09 00:12:03] telnet 192.168.1.42 9997
+  156  [2021-02-09 00:46:11] history
+  157  [2021-02-09 00:50:20] docker ps
+  158  [2021-02-09 00:50:37] docker stop 530937c517c0
+  159  [2021-02-09 00:50:55] docker system  prune -a
+  160  [2021-02-09 00:52:28] htop
+  161  [2021-02-09 00:52:55] sudo systemctl stop containerd
+  162  [2021-02-09 00:53:05] sudo systemctl stop dockerd
+  163  [2021-02-09 00:53:09] htop
+  164  [2021-02-09 00:55:42] ls
+  165  [2021-02-09 00:55:45] cd projects/
+  166  [2021-02-09 00:55:46] ls
+  167  [2021-02-09 00:55:55] mkdir splunk
+  168  [2021-02-09 00:55:57] cd splunk/
+  169  [2021-02-09 00:56:04] git clone 
+  170  [2021-02-09 00:56:11] git clone https://github.com/opsforge/splunk-light.git
+  171  [2021-02-09 00:56:21] ls
+  172  [2021-02-09 00:56:23] cd splunk-light/
+  173  [2021-02-09 00:56:24] ls
+  174  [2021-02-09 00:56:33] docker build .
+  175  [2021-02-09 00:56:56] sudo systemctl start dockerd
+  176  [2021-02-09 00:57:05] sudo systemctl start containerd
+  177  [2021-02-09 00:57:11] docker build .
+  178  [2021-02-09 00:57:20] sudo systemctl start docker
+  179  [2021-02-09 00:57:25] docker build .
+  180  [2021-02-09 01:02:28] docker system  prune -a
+  181  [2021-02-09 01:02:39] docker ps
+  182  [2021-02-09 01:02:47] sudo systemctl stop docker
+  183  [2021-02-09 01:03:01] sudo systemctl stop containerd
+  184  [2021-02-09 01:03:08] htop
+  185  [2021-02-09 01:03:22] exit
+  186  [2021-02-13 06:04:37] ls
+  187  [2021-02-13 06:39:40] cd projects/
+  188  [2021-02-13 06:39:41] ls
+  189  [2021-02-13 11:18:22] ssh pablet@192.168.1.42
+  190  [2021-02-13 11:18:47] ssh phablet@192.168.1.42
+  191  [2021-02-13 11:24:14] history | grep "1.42"
+  192  [2021-02-13 11:25:29] hostname
+  193  [2021-02-13 11:25:37] exit
+  194  [2021-02-13 11:26:21] history | grep "1.41"
+  195  [2021-02-13 11:28:43] ls
+  196  [2021-02-27 20:28:06] sudo apt-get install megatools
+  197  [2021-02-27 20:31:19] ls
+  198  [2021-02-27 20:31:22] cd projects/
+  199  [2021-02-27 20:31:23] ls
+  200  [2021-02-27 20:31:26] mkdir mega
+  201  [2021-02-27 20:31:27] ls
+  202  [2021-02-27 20:31:31] cd mega/
+  203  [2021-02-27 20:31:41] nano conf.txt
+  204  [2021-02-27 20:32:55] ls
+  205  [2021-02-27 20:33:21] megadf --config=conf.txt
+  206  [2021-02-27 20:37:04] lsb_release -a
+  207  [2021-02-27 20:37:51] cat /etc/debian_version
+  208  [2021-02-27 20:39:23] ls
+  209  [2021-02-27 20:39:27] wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megacmd-xUbuntu_20.04_amd64.deb
+  210  [2021-02-27 20:39:33] ls
+  211  [2021-02-27 20:39:53] sudo apt remove megatools
+  212  [2021-02-27 20:40:37] sudo apt install megacmd-xUbuntu_20.04_amd64.deb
+  213  [2021-02-27 20:40:43] ls
+  214  [2021-02-27 20:41:38] ls -lrth
+  215  [2021-02-27 20:42:04] chmod +777 megacmd-xUbuntu_20.04_amd64.deb
+  216  [2021-02-27 20:42:06] ls
+  217  [2021-02-27 20:42:10] sudo apt install megacmd-xUbuntu_20.04_amd64.deb
+  218  [2021-02-27 20:42:32] pwd
+  219  [2021-02-27 20:42:43] sudo apt install /home/ibrezm/projects/mega/megacmd-xUbuntu_20.04_amd64.deb 
+  220  [2021-02-27 20:46:08] megacmd login lajape4747@edultry.com strongpas
+  221  [2021-02-27 20:46:19] megacmd
+  222  [2021-02-27 20:46:27] man megacmd
+  223  [2021-02-27 20:47:01] mega-cmd
+  224  [2021-02-27 20:52:10] cd projects/mega/
+  225  [2021-02-27 20:52:11] ls
+  226  [2021-02-27 20:54:40] history
+  227  [2021-02-27 20:54:53] mega-cmd
+  228  [2021-02-27 20:47:24] mega-cmd login lajape4747@edultry.com strongpas
+  229  [2021-02-27 20:56:11] mega-get
+  230  [2021-02-27 20:56:51] mega-get https://mega.nz/fm/f49AHbbC
+  231  [2021-02-27 20:57:18] mega-cmd
+  232  [2021-02-27 21:11:23] mega-cmd-server --skip-lock-check 
+  233  [2021-02-27 21:14:05] ls
+  234  [2021-02-27 21:14:08] cd projects/mega/
+  235  [2021-02-27 21:14:09] ls
+  236  [2021-02-27 21:14:14] ls -lrth
+  237  [2021-02-27 21:15:11] ls
+  238  [2021-02-27 21:21:02] sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
+  239  [2021-02-27 21:21:47] echo 'deb https://repo.windscribe.com/ubuntu bionic main' | sudo tee /etc/apt/sources.list.d/windscribe-repo.list
+  240  [2021-02-27 21:21:59] sudo apt-get install windscribe-cli
+  241  [2021-02-27 21:22:12] sudo apt-get update
+  242  [2021-02-27 21:22:56] sudo apt-get install windscribe-cli
+  243  [2021-02-27 21:23:50] windscribe login
+  244  [2021-02-27 21:25:14] windscribe connect
+  245  [2021-02-27 21:25:36] mega-cmd-server --skip-lock-check 
+  246  [2021-02-27 21:31:44] ping google.com
+  247  [2021-02-27 21:32:15] history
+  248  [2021-02-27 21:32:25] windscribe disconnect
+  249  [2021-02-27 21:34:43] rm -rf ~/.megacmd/*
+  250  [2021-02-27 21:34:57] ls
+  251  [2021-02-27 21:35:01] rm -rf ~/.megacmd/*
+  252  [2021-02-27 21:32:32] mega-cmd-server --skip-lock-check 
+  253  [2021-02-27 21:35:24] ls ~/.megacmd/
+  254  [2021-02-27 21:35:34] ls ~/.megaCmd/
+  255  [2021-02-27 21:35:44] rm -rf ~/.megaCmd/*
+  256  [2021-02-27 21:35:47] ls ~/.megaCmd/
+  257  [2021-02-27 21:36:59] ls
+  258  [2021-02-27 21:37:23] rm -rf ~/.megaCmd/*
+  259  [2021-02-27 21:37:31] windscribe connect
+  260  [2021-02-27 21:41:06] windscribe --help
+  261  [2021-02-27 21:41:34] windscribe examples
+  262  [2021-02-27 21:41:57] windscribe speedtest
+  263  [2021-02-27 21:50:21] windscribe locations
+  264  [2021-02-27 21:57:35] ls
+  265  [2021-02-27 21:37:48] mega-cmd-server --skip-lock-check 
+  266  [2021-02-27 22:14:38] rm -rf ~/.megaCmd/*
+  267  [2021-02-27 22:14:48] windscribe disconnect
+  268  [2021-02-27 22:15:45] wget https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
+  269  [2021-02-27 22:15:50] ls
+  270  [2021-02-27 22:16:18] pwd
+  271  [2021-02-27 22:16:30] sudo apt-get install /home/ibrezm/projects/mega/nordvpn-release_1.0.0_all.deb 
+  272  [2021-02-27 22:17:17] sudo apt-get update
+  273  [2021-02-27 22:17:29] sudo apt-get install nordvpn
+  274  [2021-02-27 22:18:33] windscribe disconnect
+  275  [2021-02-27 22:18:51] nordvpn connect
+  276  [2021-02-27 22:19:11] nordvpn login
+  277  [2021-02-27 22:19:15] sudo nordvpn login
+  278  [2021-02-27 22:19:49] nordvpn connect
+  279  [2021-02-27 22:19:55] sudo nordvpn connect
+  280  [2021-02-27 22:20:39] mega-cmd-server --skip-lock-check 
+  281  [2021-02-27 22:23:41] sudo nordvpn disconnect
+  282  [2021-02-27 22:23:50] sudo nordvpn locations
+  283  [2021-02-27 22:27:11] nordvpn countries
+  284  [2021-02-27 22:27:16] sudo nordvpn countries
+  285  [2021-02-27 22:27:57] sudo nordvpn connect Malaysia
+  286  [2021-02-27 22:28:31] mega-cmd-server --skip-lock-check 
+  287  [2021-02-27 22:29:10] sudo nordvpn connect Indonesia
+  288  [2021-02-27 21:32:49] mega-cmd
+  289  [2021-02-27 22:31:09] nordvpn status
+  290  [2021-02-27 22:31:13] sudo nordvpn status
+  291  [2021-02-27 22:31:41] sudo nordvpn connect Indonesia
+  292  [2021-02-27 22:32:23] sudo nordvpn status
+  293  [2021-02-27 22:32:34] sudo nordvpn connect India
+  294  [2021-02-27 22:33:28] sudo nordvpn status
+  295  [2021-02-27 22:33:42] sudo nordvpn disconnect
+  296  [2021-02-27 22:34:07] windscribe connect
+  297  [2021-02-27 22:34:30] mega-cmd-server --skip-lock-check 
+  298  [2021-02-27 22:35:38] ls
+  299  [2021-02-27 22:35:46] rm BI.part07.rar 
+  300  [2021-02-27 22:35:50] cd projects/
+  301  [2021-02-27 22:35:57] cd ..
+  302  [2021-02-27 22:34:50] mega-cmd
+  303  [2021-02-27 22:36:38] cd projects/mega/
+  304  [2021-02-27 22:36:39] ls
+  305  [2021-02-27 22:38:03] ls
+  306  [2021-02-27 22:40:23] cd ..
+  307  [2021-02-27 22:40:24] ls
+  308  [2021-02-27 22:40:26] cd ..
+  309  [2021-02-27 22:40:27] ls
+  310  [2021-02-27 22:40:35] cd projects/mega/
+  311  [2021-02-27 22:40:36] ls
+  312  [2021-02-27 22:41:11] ls -lrth
+  313  [2021-02-27 22:36:47] mega-cmd-server --skip-lock-check 
+  314  [2021-02-27 22:36:54] mega-cmd
+  315  [2021-02-27 22:41:48] ls
+  316  [2021-02-27 22:43:16] rm -rf ~/.megaCmd/*
+  317  [2021-02-27 22:42:17] mega-cmd
+  318  [2021-02-27 22:44:04] mega-get BI/BI/BI.part08.rar
+  319  [2021-02-27 22:45:23] ls
+  320  [2021-02-27 22:50:37] sudo nordvpn disconnect
+  321  [2021-02-27 22:50:54] windscribe disconnect
+  322  [2021-02-27 22:51:02] mega-cmd-server --skip-lock-check 
+  323  [2021-02-27 22:44:11] mega-cmd
+  324  [2021-02-27 22:52:35] rm -rf ~/.megaCmd/*
+  325  [2021-02-27 22:54:38] ls
+  326  [2021-02-27 22:54:59] ls
+  327  [2021-02-27 22:55:27] rm 'BI.part02 (1).rar'
+  328  [2021-02-27 22:55:29] ls
+  329  [2021-02-27 22:55:43] rm -rf ~/.megaCmd/*
+  330  [2021-02-27 22:56:33] ls
+  331  [2021-02-27 22:57:00] rm 'BI.part03 (1).rar'
+  332  [2021-02-27 22:57:12] rm -rf ~/.megaCmd/*
+  333  [2021-02-27 22:57:30] ls
+  334  [2021-02-27 22:58:05] rm -rf ~/.megaCmd/*
+  335  [2021-02-27 22:59:17] ls
+  336  [2021-02-27 22:59:29] rm 'BI.part04 (1).rar'
+  337  [2021-02-27 22:59:34] ls
+  338  [2021-02-27 23:10:08] ls -lrth
+  339  [2021-02-27 23:10:30] rm 'BI.part05 (1).rar'
+  340  [2021-02-27 23:10:36] rm 'BI.part06 (1).rar'
+  341  [2021-02-27 23:10:39] rm 'BI.part07 (1).rar'
+  342  [2021-02-27 23:10:45] ls
+  343  [2021-02-27 23:31:43] ls -lrth
+  344  [2021-02-27 23:34:29] ls
+  345  [2021-02-27 23:37:12] df -h
+  346  [2021-02-27 23:45:02] ls -lrth
+  347  [2021-02-27 23:49:58] ls
+  348  [2021-02-27 23:56:44] ls ~/.megaCmd/*
+  349  [2021-02-27 23:57:08] cat /home/ibrezm/.megaCmd/megacmdserver.log
+  350  [2021-02-27 23:59:33] sudo apt-get install unrar
+  351  [2021-02-28 00:01:06] sudo apt-get install rar
+  352  [2021-02-28 00:07:45] ls -lrth
+  353  [2021-02-28 00:07:56] ls
+  354  [2021-02-28 00:08:08] ps -eaf
+  355  [2021-02-28 00:08:17] htop
+  356  [2021-02-28 00:08:46] ls
+  357  [2021-02-28 00:09:09] history | grep shut
+  358  [2021-02-28 00:09:18] sudo shutdown -h +3
+  359  [2021-02-28 00:09:50] htop
+  360  [2021-02-28 00:10:37] ls
+  361  [2021-02-28 00:10:41] date
+  362  [2021-02-27 22:55:51] mega-cmd
+  363  [2021-02-28 00:01:44] htop
+  364  [2021-02-28 08:02:52] df -h
+  365  [2021-02-28 08:03:07] ls -l /dev/disk/by-uuid/
+  366  [2021-02-28 08:03:21] sudo mkdir /media/usb
+  367  [2021-02-28 08:03:56] sudo chown -R ibrezm:ibrezm /media/usb
+  368  [2021-02-28 08:04:16] sudo mount /dev/sda1 /media/usb -o uid=ibrezm,gid=ibrezm
+  369  [2021-02-28 08:04:34] cd /media/usb
+  370  [2021-02-28 08:04:41] sudo cd /media/usb
+  371  [2021-02-28 08:05:12] cd /media/usb/
+  372  [2021-02-28 08:05:21] sudb bash
+  373  [2021-02-28 08:05:30] sudo bash
+  374  [2021-02-28 08:07:12] ls -l /dev/disk/by-uuid/
+  375  [2021-02-28 08:07:31] sudo mount -t ntfs-3g /dev/sdb1 /media/USB
+  376  [2021-02-28 08:07:58] sudo mount -t vfat /dev/sdb1 /media/USB -o
+  377  [2021-02-28 08:08:11] ls
+  378  [2021-02-28 08:08:16] cd projects/mega/
+  379  [2021-02-28 08:08:17] ls
+  380  [2021-02-28 08:09:59] ls -l /dev/disk/by-uuid/
+  381  [2021-02-28 08:10:07] sudo fdisk -l
+  382  [2021-02-28 08:11:05] history grep shut
+  383  [2021-02-28 08:11:09] history | grep shut
+  384  [2021-02-28 08:11:16] ls
+  385  [2021-02-28 08:11:20] sudo fdisk -l
+  386  [2021-02-28 08:11:39] sudo mkdir /media/USB
+  387  [2021-02-28 08:11:56] sudo mount -t vfat /dev/sdb1 /media/USB
+  388  [2021-02-28 08:12:29] sudo mount  /dev/sdb1 /media/USB
+  389  [2021-02-28 08:12:36] ls
+  390  [2021-02-28 08:12:57] cp *.rar /media/USB
+  391  [2021-02-28 08:13:49] cd /media/USB/
+  392  [2021-02-28 08:13:51] ls
+  393  [2021-02-28 08:14:00] ls -lrth
+  394  [2021-02-28 08:14:11] ls
+  395  [2021-02-28 08:14:15] ls -lrth
+  396  [2021-02-28 08:14:34] ls
+  397  [2021-02-28 08:18:11] cd projects/mega/
+  398  [2021-02-28 08:18:12] ls
+  399  [2021-02-28 08:18:22] unrar l BI.rar
+  400  [2021-02-28 08:19:08] unrar l BI.part01.rar 
+  401  [2021-02-28 08:25:16] ls
+  402  [2021-02-28 08:25:28] mkidr GAMES
+  403  [2021-02-28 08:25:40] mkdir GAMES
+  404  [2021-02-28 08:25:42] ls
+  405  [2021-02-28 08:26:02] cd GAMES/
+  406  [2021-02-28 08:13:05] sudo cp *.rar /media/USB
+  407  [2021-02-28 08:29:03] mkdir BIrars
+  408  [2021-02-28 08:29:07] sudo mkdir BIrars
+  409  [2021-02-28 08:29:25] sudo mv *.rar BIrars/
+  410  [2021-02-28 08:29:27] ls
+  411  [2021-02-28 08:42:09] ls
+  412  [2021-02-28 08:42:11] cd GAMES/
+  413  [2021-02-28 08:42:12] ls
+  414  [2021-02-28 08:42:19] cd BioShock\ Infinite/
+  415  [2021-02-28 08:42:20] ls
+  416  [2021-02-28 08:26:25] unrar x ../BI.part01.rar 
+  417  [2021-02-28 08:47:04] cd ..
+  418  [2021-02-28 08:47:05] ls
+  419  [2021-02-28 08:48:28] sudo cp -a GAMES/ /media/USB/GAMES 
+  420  [2021-02-28 08:48:56] sudo cp  GAMES/ /media/USB/GAMES 
+  421  [2021-02-28 08:49:17] cd GAMES/
+  422  [2021-02-28 08:49:18] ls
+  423  [2021-02-28 08:53:34] du -hs /media/USB/GAMES
+  424  [2021-02-28 08:53:46] cd ..
+  425  [2021-02-28 08:53:48] ls
+  426  [2021-02-28 08:53:50] cd ..
+  427  [2021-02-28 08:53:51] ls
+  428  [2021-02-28 08:54:17] du -hs ./GAMES/
+  429  [2021-02-28 08:49:02] sudo cp  -r GAMES/ /media/USB/GAMES 
+  430  [2021-02-28 09:10:16] sudo rsync --info=progress2 GAMES/ /media/USB/GAMES 
+  431  [2021-02-28 09:10:48] pwd
+  432  [2021-02-28 09:10:54] cd GAMES/
+  433  [2021-02-28 09:10:55] ls
+  434  [2021-02-28 09:10:58] pwd
+  435  [2021-02-28 09:11:14] sudo rsync --info=progress2 /home/ibrezm/projects/mega/GAMES /media/USB/GAMES 
+  436  [2021-02-28 09:18:53] ls
+  437  [2021-02-28 09:18:56] cd GAMES/
+  438  [2021-02-28 09:18:57] ls
+  439  [2021-02-28 09:25:05] du -hs /media/USB/GAMES/GAMES/
+  440  [2021-02-28 09:39:15] du -hs /home/ibrezm/projects/mega/
+  441  [2021-02-28 09:39:26] du -hs /home/ibrezm/projects/mega/GAMES/
+  442  [2021-02-28 09:39:36] du -hs /media/USB/GAMES/GAMES/
+  443  [2021-02-28 09:12:18] sudo rsync -av --info=progress2 /home/ibrezm/projects/mega/GAMES /media/USB/GAMES 
+  444  [2021-02-28 09:40:41] ls
+  445  [2021-02-28 09:40:44] cd BioShock\ Infinite/
+  446  [2021-02-28 09:40:45] ls
+  447  [2021-02-28 09:43:05] cd ..
+  448  [2021-02-28 09:43:06] ls
+  449  [2021-02-28 09:43:08] cd ..
+  450  [2021-02-28 09:43:11] ls
+  451  [2021-02-28 09:43:13] cd ..
+  452  [2021-02-28 09:43:17] ls
+  453  [2021-02-28 09:43:20] cd GAMES/
+  454  [2021-02-28 09:43:22] ls
+  455  [2021-02-28 09:43:27] rm -R BioShock\ Infinite/
+  456  [2021-02-28 09:44:03] rm -R -f BioShock\ Infinite/
+  457  [2021-02-28 09:44:11] sudo rm -R -f BioShock\ Infinite/
+  458  [2021-02-28 09:44:16] ls
+  459  [2021-02-28 09:44:30] du -hs /media/USB/GAMES/GAMES/
+  460  [2021-02-28 09:44:42] du -hs /home/ibrezm/projects/mega/GAMES/
+  461  [2021-02-28 09:42:19] sudo rsync rsync --update -raz --progress  GAMES/ /media/USB/GAMES 
+  462  [2021-02-28 09:55:59] du -hs /media/USB/GAMES/GAMES/
+  463  [2021-02-28 09:57:07] ls
+  464  [2021-02-28 09:57:34] cp -R -u -p /home/ibrezm/projects/mega/GAMES/ /media/USB/GAMES/GAMES/
+  465  [2021-02-28 09:59:47] history
+  466  [2021-02-28 10:02:15] history | grep du
+  467  [2021-02-28 10:16:39] du -hs /media/usb/
+  468  [2021-02-28 10:16:45] sudo du -hs /media/usb/
+  469  [2021-02-28 10:17:03] sudo du -hs /media/USB/GAMES/GAMES/
+  470  [2021-02-28 09:57:42] sudo cp -R -u -p /home/ibrezm/projects/mega/GAMES/ /media/USB/GAMES/GAMES/
+  471  [2021-02-28 10:17:43] du -hs /media/USB/GAMES/GAMES/
+  472  [2021-02-28 10:17:48] ls
+  473  [2021-02-28 10:17:51] cd GAMES/
+  474  [2021-02-28 10:17:52] ls
+  475  [2021-02-28 10:18:05] cd ..
+  476  [2021-02-28 10:20:35] ls
+  477  [2021-02-28 10:20:43] cd /media/USB/
+  478  [2021-02-28 10:20:44] ls
+  479  [2021-02-28 10:20:48] cd GAMES/
+  480  [2021-02-28 10:20:49] ls
+  481  [2021-02-28 10:20:54] cd GAMES/
+  482  [2021-02-28 10:20:56] ls
+  483  [2021-02-28 10:21:07] rm -rf GAMES/
+  484  [2021-02-28 10:21:14] sudo rm -rf GAMES/
+  485  [2021-02-28 10:21:16] ls
+  486  [2021-02-28 10:21:20] cd ..
+  487  [2021-02-28 10:21:21] ls
+  488  [2021-02-28 10:21:32] pwd
+  489  [2021-02-28 10:21:42] du -s /media/USB/GAMES
+  490  [2021-02-28 10:21:49] du -hs /media/USB/GAMES
+  491  [2021-02-28 10:21:56] ls
+  492  [2021-02-28 10:21:59] cd ..
+  493  [2021-02-28 10:22:06] ls
+  494  [2021-02-28 10:22:08] cd GAMES/
+  495  [2021-02-28 10:22:12] ls
+  496  [2021-02-28 10:22:19] du -hs /media/USB/GAMES
+  497  [2021-02-28 10:23:05] ls
+  498  [2021-02-28 10:23:08] du -hs /media/USB/GAMES
+  499  [2021-02-28 10:23:38] ls
+  500  [2021-02-28 10:23:40] cd ..
+  501  [2021-02-28 10:23:41] ls
+  502  [2021-02-28 10:23:46] du -hs /media/USB/GAMES
+  503  [2021-02-28 10:24:16] du -s /media/USB/GAMES
+  504  [2021-02-28 10:24:48] du -s /home/ibrezm/projects/mega/GAMES/
+  505  [2021-02-28 10:24:52] du -s /media/USB/GAMES
+  506  [2021-02-28 10:25:15] du -s /home/ibrezm/projects/mega/GAMES/
+  507  [2021-02-28 10:26:17] diff -q /home/ibrezm/projects/mega/GAMES/ /media/USB/GAMES/GAMES
+  508  [2021-02-28 10:19:37] sudo cp -R -u -p --no-preserve=mode,ownership /home/ibrezm/projects/mega/GAMES/ /media/USB/GAMES/
+  509  [2021-02-28 10:26:32] diff -qr /home/ibrezm/projects/mega/GAMES/ /media/USB/GAMES/GAMES
+  510  [2021-02-28 10:30:19] sudo umount /dev/sdb1
+  511  [2021-02-28 10:30:49] sudo umount /media/USB
+  512  [2021-02-28 10:31:22] umount -l /media/USB
+  513  [2021-02-28 10:31:28] sudo umount -l /media/USB
+  514  [2021-02-28 10:31:49] sudo umount -l /dev/sdb1
+  515  [2021-02-28 11:42:44] ls
+  516  [2021-02-28 11:42:51] rm *.rar
+  517  [2021-02-28 11:42:53] ls
+  518  [2021-02-28 11:43:16] lsblk
+  519  [2021-02-28 11:43:53] sudo  mkdir /media/USB
+  520  [2021-02-28 11:44:49] sudo fdisk -lsudo fdisk -l
+  521  [2021-02-28 11:44:51] sudo fdisk -l
+  522  [2021-02-28 11:45:38] sudo mount /dev/sdc1 /media/usb
+  523  [2021-02-28 11:50:28] cd /media/usb 
+  524  [2021-02-28 11:50:30] ls
+  525  [2021-02-28 11:50:45] mkdir GAMES
+  526  [2021-02-28 11:50:50] sudo mkdir GAMES
+  527  [2021-02-28 11:50:54] cd GAMES/
+  528  [2021-02-28 11:51:57] ls
+  529  [2021-02-28 11:52:11] cd /media/usb/GAMES/
+  530  [2021-02-28 11:52:12] ls
+  531  [2021-02-28 11:52:15] ls -lrth
+  532  [2021-02-28 11:55:22] ls
+  533  [2021-02-28 11:55:46] htop
+  534  [2021-02-28 11:56:08] sudo apt-get remove nordvpm
+  535  [2021-02-28 11:56:17] htop
+  536  [2021-02-28 11:56:38] sudo systemctl disable nordvpn
+  537  [2021-02-28 11:56:50] sudo systemctl disable nordvpnd
+  538  [2021-02-28 11:56:55] htop
+  539  [2021-02-28 11:57:09] sudo systemctl stop  nordvpnd
+  540  [2021-02-28 11:57:16] htop
+  541  [2021-02-28 11:57:37] ls
+  542  [2021-02-28 11:57:54] cd /media/USB
+  543  [2021-02-28 11:57:55] ls
+  544  [2021-02-28 11:58:03] cd ..
+  545  [2021-02-28 11:58:06] cd usb/
+  546  [2021-02-28 11:58:08] ls
+  547  [2021-02-28 11:58:19] cd GAMES/
+  548  [2021-02-28 11:58:20] ls
+  549  [2021-02-28 11:58:41] du -sh BioShock\ Infinite/
+  550  [2021-02-28 12:07:49] cd ..
+  551  [2021-02-28 12:07:54] du -sh GAMES/
+  552  [2021-02-28 11:51:27] sudo unrar x /home/ibrezm/projects/mega/BI.part01.rar 
+  553  [2021-02-28 12:14:10] ls
+  554  [2021-02-28 12:14:12] cd GAMES/
+  555  [2021-02-28 12:14:17] du -sh BioShock\ Infinite/
+  556  [2021-02-28 12:18:27] ls
+  557  [2021-02-28 12:18:52] du -sh BioShock\ Infinite/
+  558  [2021-02-28 12:23:00] history | grep sync
+  559  [2021-02-28 12:23:43] cd /home/ibrezm/projects/mega/
+  560  [2021-02-28 12:24:50] ls
+  561  [2021-02-28 12:24:56] cd /media/USB/
+  562  [2021-02-28 12:24:57] ls
+  563  [2021-02-28 12:25:08] du -sh BioShock\ Infinite/
+  564  [2021-02-28 12:25:17] ls
+  565  [2021-02-28 12:24:08] sudo rsync --update -raz --progress  GAMES/ /media/USB
+  566  [2021-02-28 12:25:37] cd ..
+  567  [2021-02-28 12:25:38] ls
+  568  [2021-02-28 12:25:40] cd usb/
+  569  [2021-02-28 12:25:41] ls
+  570  [2021-02-28 12:26:26] du -sh GAMES/
+  571  [2021-02-28 12:34:22] ls
+  572  [2021-02-28 12:34:25] cd GAMES/
+  573  [2021-02-28 12:34:26] ls
+  574  [2021-02-28 12:34:37] du -sh BioShock\ Infinite/
+  575  [2021-02-28 12:35:45] cd BioShock\ Infinite/
+  576  [2021-02-28 12:35:46] ls
+  577  [2021-02-28 12:35:49] cd ..
+  578  [2021-02-28 12:35:50] ls
+  579  [2021-02-28 12:35:54] cd ..
+  580  [2021-02-28 12:35:54] ls
+  581  [2021-02-28 12:35:57] cd GAMES/
+  582  [2021-02-28 12:35:58] cd ..
+  583  [2021-02-28 12:36:04] df -h
+  584  [2021-02-28 12:40:36] du -sh GAMES/
+  585  [2021-02-28 12:26:02] sudo rsync --update -raz --progress  GAMES/ /media/usb/GAMES
+  586  [2021-02-28 14:24:00] history | grep cp
+  587  [2021-02-28 14:24:56] du -sh GAMES/
+  588  [2021-02-28 14:26:56] ls
+  589  [2021-02-28 14:27:32] ls
+  590  [2021-02-28 14:28:21] cd /media/USB/
+  591  [2021-02-28 14:28:30] ls
+  592  [2021-02-28 14:28:36] cd GAMES/
+  593  [2021-02-28 14:28:37] ls
+  594  [2021-02-28 14:27:21] sudo cp -R -u -p --no-preserve=mode,ownership /home/ibrezm/projects/mega/GAMES/ /media/USB/
+  595  [2021-02-28 14:29:25] du -hs BioShock\ Infinite/
+  596  [2021-02-28 14:29:42] du -hs 
+  597  [2021-02-28 14:29:46] ls
+  598  [2021-02-28 14:29:48] cd ..
+  599  [2021-02-28 14:29:50] du -hs 
+  600  [2021-02-28 14:29:59] sudo du -hs GAMES/
+  601  [2021-02-28 14:30:07] ls
+  602  [2021-02-28 14:30:14] sudo du -hs BioShock\ Infinite/
+  603  [2021-02-28 14:30:20] ls
+  604  [2021-02-28 14:30:45] rm -r BioShock\ Infinite/
+  605  [2021-02-28 14:30:54] rm -rf BioShock\ Infinite/
+  606  [2021-02-28 14:30:57] ls
+  607  [2021-02-28 14:31:04] rm -rf GAMES/
+  608  [2021-02-28 14:31:13] sudo rm -rf GAMES/
+  609  [2021-02-28 14:31:15] ls
+  610  [2021-02-28 14:31:37] cd ..
+  611  [2021-02-28 14:31:41] ls cd usb/
+  612  [2021-02-28 14:31:59] cd USB/
+  613  [2021-02-28 14:32:00] ls
+  614  [2021-02-28 14:32:06] rm -rf GAMES/
+  615  [2021-02-28 14:32:09] sudo rm -rf GAMES/
+  616  [2021-02-28 14:32:11] ls
+  617  [2021-02-28 14:32:13] cd ..
+  618  [2021-02-28 14:32:15] ls
+  619  [2021-02-28 14:32:19] cd usb/
+  620  [2021-02-28 14:32:20] ls
+  621  [2021-02-28 14:32:28] du -fs GAMES/
+  622  [2021-02-28 14:32:34] sudo du -fs GAMES/
+  623  [2021-02-28 14:32:37] sudo du -hs GAMES/
+  624  [2021-02-28 14:32:43] cd GAMES/
+  625  [2021-02-28 14:32:45] ls
+  626  [2021-02-28 14:33:08] cd ..
+  627  [2021-02-28 14:33:10] ls
+  628  [2021-02-28 14:33:12] cd GAMES/
+  629  [2021-02-28 14:33:14] ls
+  630  [2021-02-28 14:33:25] du -hs BioShock\ Infinite/
+  631  [2021-02-28 14:33:50] du -s BioShock\ Infinite/
+  632  [2021-02-28 14:33:58] du -hs BioShock\ Infinite/
+  633  [2021-02-28 14:34:01] du -s BioShock\ Infinite/
+  634  [2021-02-28 14:34:24] du -hs BioShock\ Infinite/
+  635  [2021-02-28 14:34:32] du -s BioShock\ Infinite/
+  636  [2021-02-28 14:34:56] du -hs BioShock\ Infinite/
+  637  [2021-02-28 14:34:59] du -s BioShock\ Infinite/
+  638  [2021-02-28 14:42:51] du -hs BioShock\ Infinite/
+  639  [2021-02-28 14:43:00] du -s BioShock\ Infinite/
+  640  [2021-02-28 14:43:12] du -hs BioShock\ Infinite/
+  641  [2021-02-28 14:43:31] du -s BioShock\ Infinite/
+  642  [2021-02-28 14:44:13] du -hs BioShock\ Infinite/
+  643  [2021-02-28 14:44:18] du -s BioShock\ Infinite/
+  644  [2021-02-28 14:44:26] du -hs BioShock\ Infinite/
+  645  [2021-02-28 14:44:44] du -s BioShock\ Infinite/
+  646  [2021-02-28 14:45:04] du -hs BioShock\ Infinite/
+  647  [2021-02-28 14:46:54] du -s BioShock\ Infinite/
+  648  [2021-02-28 14:47:01] du -hs BioShock\ Infinite/
+  649  [2021-02-28 14:47:07] ls
+  650  [2021-02-28 14:47:10] cd BioShock\ Infinite/
+  651  [2021-02-28 14:47:11] ls
+  652  [2021-02-28 14:47:24] du -hs 
+  653  [2021-02-28 14:47:48] du -s 
+  654  [2021-02-28 14:47:59] du -hs 
+  655  [2021-02-28 14:48:25] ls
+  656  [2021-02-28 14:50:37] du -hs 
+  657  [2021-02-28 14:50:45] du -s 
+  658  [2021-02-28 14:51:10] du -hs 
+  659  [2021-02-28 14:51:21] du -s 
+  660  [2021-02-28 14:51:35] du -hs 
+  661  [2021-02-28 14:51:37] du -s 
+  662  [2021-02-28 14:51:52] du -hs 
+  663  [2021-02-28 14:52:03] du -s 
+  664  [2021-02-28 14:52:40] du -hs 
+  665  [2021-02-28 14:53:22] du -s 
+  666  [2021-02-28 14:54:32] du -hs 
+  667  [2021-02-28 14:54:36] du -s 
+  668  [2021-02-28 14:57:01] du -hs 
+  669  [2021-02-28 14:57:05] du -s 
+  670  [2021-02-28 14:33:03] sudo cp -R -u -p --no-preserve=mode,ownership /home/ibrezm/projects/mega/GAMES/ /media/usb/
+  671  [2021-02-28 15:11:16] du -hs 
+  672  [2021-02-28 15:11:39] history | grep umound
+  673  [2021-02-28 15:11:42] history | grep unmound
+  674  [2021-02-28 15:11:44] history | grep unmount
+  675  [2021-02-28 15:11:51] history | grep mount
+  676  [2021-02-28 15:12:04] df -h
+  677  [2021-02-28 15:12:10] sudo umount -l /dev/sdc1
+  678  [2021-02-28 15:12:27] sudo umount -l /media/usb 
+  679  [2021-03-27 04:40:12] ls
+  680  [2021-03-27 04:40:19] cd projects/
+  681  [2021-03-27 04:40:21] ls
+  682  [2021-03-27 04:40:35] mkdir testpost
+  683  [2021-03-27 04:41:27] ls
+  684  [2021-03-27 04:41:29] cd projects/
+  685  [2021-03-27 04:41:29] ls
+  686  [2021-03-27 04:41:33] cd testpost/
+  687  [2021-03-27 04:42:41] ls
+  688  [2021-03-27 04:43:18] nano docker-compose.yml
+  689  [2021-03-27 04:51:22] ls
+  690  [2021-03-27 04:51:24] docker ps
+  691  [2021-03-27 04:51:40] docker inspect f830d3c1eb58
+  692  [2021-03-27 04:44:08] docker-compose up
+  693  [2021-06-13 10:25:54] ls
+  694  [2021-06-13 10:28:36] cd projects/
+  695  [2021-06-13 10:28:38] ls
+  696  [2021-06-13 10:28:50] mkdir concorsetest
+  697  [2021-06-13 10:28:53] cd concorsetest/
+  698  [2021-06-13 10:28:57] wget https://concourse-ci.org/docker-compose.yml
+  699  [2021-06-13 10:29:11] vi docker-compose.yml 
+  700  [2021-06-13 10:29:49] docker-compose up -d
+  701  [2021-06-13 10:32:42] docker login --username ibrezm1
+  702  [2021-06-13 10:35:01] docker-compose up -d
+  703  [2021-06-13 10:41:16] cd /tmp
+  704  [2021-06-13 10:41:49] curl -LO http://192.168.1.43:8080/api/v1/cli?arch=amd64&platform=linux
+  705  [2021-06-13 10:42:27] ls
+  706  [2021-06-13 10:42:50] curl -LO http://192.168.1.43:8080/api/v1/cli?arch=amd64&platform=linux
+  707  [2021-06-13 10:44:08] wget http://192.168.1.43:8080/api/v1/cli?arch=amd64&platform=linux
+  708  [2021-06-13 10:46:04] Source: https://linuxx.info/installing-concourse-ci-in-unix-linux
+  709  [2021-06-13 10:48:40] wget -O ~/fly "http://192.168.1.43:8080/api/v1/cli?arch=amd64&platform=linux"
+  710  [2021-06-13 10:49:05] sudo mv ~/fly /usr/local/bin
+  711  [2021-06-13 10:49:23] sudo chmod 0755 /usr/local/bin/fly
+  712  [2021-06-13 10:49:25] fly
+  713  [2021-06-13 10:49:43] fly --target main login --concourse-url http://192.168.1.43:8080 -u test -p test
+  714  [2021-06-13 10:50:04] ls
+  715  [2021-06-13 10:50:06] ls`
+  716  [2021-06-13 10:50:14] cd ~
+  717  [2021-06-13 10:50:16] ls
+  718  [2021-06-13 10:50:18] cd projects/
+  719  [2021-06-13 10:50:21] ls
+  720  [2021-06-13 10:50:25] cd concorsetest/
+  721  [2021-06-13 10:50:26] ls
+  722  [2021-06-13 10:50:29] git clone https://github.com/starkandwayne/concourse-tutorial.git
+  723  [2021-06-13 10:50:43] cd concourse-tutorial/tutorials/basic/task-hello-world
+  724  [2021-06-13 10:50:57] fly -t main execute -c task_hello_world.yml
+  725  [2021-06-13 10:54:19] cat docker-compose.yml
+  726  [2021-06-13 10:54:30] cd ../../..
+  727  [2021-06-13 10:54:32] ls
+  728  [2021-06-13 10:54:35] cd ..
+  729  [2021-06-13 10:54:36] ls
+  730  [2021-06-13 10:54:40] cat docker-compose.yml
+  731  [2021-06-13 10:55:11] docker-compose down
+  732  [2021-06-13 10:55:36] cat docker-compose.yml
+  733  [2021-06-13 10:55:58] docker-compose up -d
+  734  [2021-06-13 10:56:56] docker-compose down
+  735  [2021-06-13 10:57:22] docker ps
+  736  [2021-06-13 10:57:34] docker system prune -a
+  737  [2021-06-13 10:57:43] docker-compose up -d
+  738  [2021-06-13 11:02:26] fly -t main execute -c task_hello_world.yml
+  739  [2021-06-13 11:02:35] cd concourse-tutorial/tutorials/basic/task-hello-world
+  740  [2021-06-13 11:02:42] fly -t main execute -c task_hello_world.yml
+  741  [2021-06-13 11:03:47] fly --target main login --concourse-url http://192.168.1.43:8080 -u test -p test
+  742  [2021-06-13 11:03:53] fly -t main execute -c task_hello_world.yml
+  743  [2021-06-13 13:31:56] ls
+  744  [2021-06-13 13:32:01] docker-compose up -d
+  745  [2021-06-13 13:32:30] docker-compose down
+  746  [2021-06-13 13:32:55] docker ps
+  747  [2021-06-13 13:33:02] docker system prune -a
+  748  [2021-06-13 13:33:33] docker ps
+  749  [2021-06-13 13:33:45] cd ../../../
+  750  [2021-06-13 13:33:46] ls
+  751  [2021-06-13 13:33:48] cd ..
+  752  [2021-06-13 13:33:49] ls
+  753  [2021-06-13 13:33:54] docker-compose down
+  754  [2021-06-13 13:34:20] docker ps
+  755  [2021-06-13 13:34:40] docker stop f830d3c1eb58
+  756  [2021-06-13 13:34:50] docker stop 9e5997f4f5a4
+  757  [2021-06-13 13:34:58] docker ps
+  758  [2021-06-13 13:35:10] vi docker-compose.yml 
+  759  [2021-06-13 13:36:47] docker-compose up -d
+  760  [2021-06-13 13:37:34] vi docker-compose.yml 
+  761  [2021-06-13 13:37:54] docker ps
+  762  [2021-06-13 13:38:12] docker-compose down
+  763  [2021-06-13 13:39:02] docker-compose up -d
+  764  [2021-06-13 13:42:04] cd concourse-tutorial/tutorials/basic/task-hello-world
+  765  [2021-06-13 13:42:23] fly --target main login --concourse-url http://localhost:8080 -u test -p test
+  766  [2021-06-13 13:42:35] fly -t main execute -c task_hello_world.yml
+  767  [2021-06-13 13:47:52] fly --target main login --concourse-url http://192.168.1.43:8080 -u test -p test
+  768  [2021-06-13 13:47:58] fly -t main execute -c task_hello_world.yml
+  769  [2021-06-13 13:48:45] cd ../../../../../
+  770  [2021-06-13 13:48:47] ls
+  771  [2021-06-13 13:48:51] cd concorsetest/
+  772  [2021-06-13 13:48:52] ls
+  773  [2021-06-13 13:48:57] vi docker-compose.yml 
+  774  [2021-06-13 13:49:26] docker-compose down
+  775  [2021-06-13 13:50:35] fly --target main login --concourse-url http://localhost:8080 -u test -p test
+  776  [2021-06-13 13:51:02] docker-compose up -d
+  777  [2021-06-13 13:51:15] fly --target main login --concourse-url http://localhost:8080 -u test -p test
+  778  [2021-06-13 13:51:36] ls
+  779  [2021-06-13 13:51:39] fly --target main login --concourse-url http://localhost:8080 -u test -p test
+  780  [2021-06-13 13:52:11] vi docker-compose.yml 
+  781  [2021-06-13 13:52:26] fly --target main login --concourse-url http://localhost:8080 -u test -p test
+  782  [2021-06-13 13:52:34] docker-compose down
+  783  [2021-06-13 13:53:01] docker-compose up -d
+  784  [2021-06-13 13:57:47] fly --target main login --concourse-url http://localhost:8080 -u test -p test
+  785  [2021-06-13 13:58:02] cd concourse-tutorial/tutorials/basic/task-hello-world
+  786  [2021-06-13 13:58:21] fly -t main execute -c task_hello_world.yml
+  787  [2021-06-13 14:02:00] cd ../../../../
+  788  [2021-06-13 14:02:01] ls
+  789  [2021-06-13 14:02:12] docker-compose down
+  790  [2021-06-13 20:23:07] curl -s https://4.ifcfg.me/
+  791  [2021-06-13 20:25:01] wget -O - -q https://icanhazip.com/
+  792  [2021-06-13 20:25:20] cat1 = $(wget -O - -q https://icanhazip.com/)
+  793  [2021-06-13 20:25:27] cat1=$(wget -O - -q https://icanhazip.com/)
+  794  [2021-06-13 20:25:40] echo $cat1
+  795  [2021-06-18 14:05:30] ansible
+  796  [2021-06-18 14:06:04] terraform
+  797  [2021-06-18 14:06:24] sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
+  798  [2021-06-18 14:09:36] sudo apt-get update && sudo apt-get install terraform
+  799  [2021-06-18 14:10:41] terraform -help
+  800  [2021-06-18 14:11:08] touch ~/.bashrc
+  801  [2021-06-18 14:11:15] terraform -install-autocomplete
+  802  [2021-06-18 14:12:10] open -a Docker
+  803  [2021-06-18 14:12:31] open
+  804  [2021-06-18 14:13:14] docker 
+  805  [2021-06-18 14:14:15] sudo systemctl stop dockerd
+  806* [2021-06-18 14:14:29] sudo systemctl start container
+  807  [2021-06-18 14:14:44] sudo systemctl stop dockerd
+  808  [2021-06-18 14:15:54] mkdir learn-terraform-docker-container
+  809  [2021-06-18 14:15:55] ls
+  810  [2021-06-18 14:16:02] cd learn-terraform-docker-container/
+  811  [2021-06-18 14:16:04] ls
+  812  [2021-06-18 14:16:22] vi main.tf
+  813  [2021-06-18 14:16:53] terraform init
+  814  [2021-06-18 14:17:17] terraform apply
+  815  [2021-06-18 14:17:54] sudo systemctl start dockerd
+  816  [2021-06-18 14:17:56] sudo systemctl start docker
+  817  [2021-06-18 14:18:11] terraform apply
+  818  [2021-06-18 14:20:06] docker ps
+  819  [2021-06-18 14:20:20] terraform destroy
+  820  [2021-06-18 14:20:37] docker ps
+  821  [2021-06-18 14:20:46] docker system prune -a
+  822  [2021-06-18 14:20:54] ls
+  823  [2021-06-18 14:21:02] bash
+  824  [2021-06-18 14:21:07] history
+  825  [2021-06-18 14:21:24] vi notes.txt
+  826  [2021-06-18 14:21:31] ls
+  827  [2021-06-18 14:21:33] cd ..
+  828  [2021-06-18 14:22:00] mkdir learn-GCP-terafrom
+  829  [2021-06-18 14:24:37] cd learn-GCP-terafrom/
+  830  [2021-06-18 14:24:53] vi gcp-terrafrom-user.json
+  831  [2021-06-18 14:26:00] vi main.tf
+  832  [2021-06-18 14:27:31] terraform init
+  833  [2021-06-18 14:27:44] terraform fmt
+  834  [2021-06-18 14:27:53] terraform validate
+  835  [2021-06-18 14:28:02] vi main.tf
+  836  [2021-06-18 14:28:17] terraform validate
+  837  [2021-06-18 14:28:28] terraform apply
+  838  [2021-06-18 15:12:50] ls
+  839  [2021-06-18 15:12:59] cd ..
+  840  [2021-06-18 15:13:00] ls
+  841  [2021-06-18 15:13:09] mkdir terrafrom-folders
+  842  [2021-06-18 15:13:25] mv learn* terrafrom-folders/
+  843  [2021-06-18 15:13:26] ls
+  844  [2021-06-18 15:13:32] cd terrafrom-folders/
+  845  [2021-06-18 15:13:32] ls
+  846  [2021-06-18 15:13:50] mkdir learn-terrafrom-compute
+  847  [2021-06-18 15:13:55] vi main.tf
+  848  [2021-06-18 15:14:38] terrafrom init
+  849  [2021-06-18 15:14:43] terraform init
+  850  [2021-06-18 15:14:56] terraform apply
+  851  [2021-06-18 15:15:29] ls
+  852  [2021-06-18 15:15:37] cd learn-GCP-terafrom/
+  853  [2021-06-18 15:15:38] ls
+  854  [2021-06-18 15:15:49] vi main.tf 
+  855  [2021-06-18 15:16:26] cp gcp-terrafrom-user.json ..\
+  856  [2021-06-18 15:16:49] cp gcp-terrafrom-user.json ..\gcp-terrafrom-user.json
+  857  [2021-06-18 15:16:51] cd ..
+  858  [2021-06-18 15:16:52] ls
+  859  [2021-06-18 15:16:59] cd learn-terrafrom-compute/
+  860  [2021-06-18 15:17:08] ls
+  861  [2021-06-18 15:17:15] cd ..
+  862  [2021-06-18 15:17:16] ls
+  863  [2021-06-18 15:17:24] cd learn-GCP-terafrom/
+  864  [2021-06-18 15:17:25] ls
+  865  [2021-06-18 15:17:54] cp gcp-terrafrom-user.json ../
+  866  [2021-06-18 15:17:55] ls
+  867  [2021-06-18 15:18:01] cd ..
+  868  [2021-06-18 15:18:01] ls
+  869  [2021-06-18 15:18:22] cp main.tf ./learn-terrafrom-compute/
+  870  [2021-06-18 15:18:25] rm main.tf 
+  871  [2021-06-18 15:18:33] cd learn-terrafrom-compute/
+  872* [2021-06-18 15:18:36] 
+  873  [2021-06-18 15:18:39] vi main.tf 
+  874  [2021-06-18 15:19:09] terrafrom init
+  875  [2021-06-18 15:19:13] terraform init
+  876  [2021-06-18 15:19:24] vi main.tf 
+  877  [2021-06-18 15:19:46] terraform init
+  878  [2021-06-18 15:19:53] terrafrom apply
+  879  [2021-06-18 15:19:58] terraform apply
+  880  [2021-06-18 15:21:13] terrafrom destroy
+  881  [2021-06-18 15:21:18] terraform destroy
+  882  [2021-06-18 15:22:09] vi main.tf 
+  883  [2021-06-18 15:44:58] terraform init
+  884  [2021-06-18 15:45:07] terraform apply
+  885  [2021-06-18 15:45:56] vi main.tf 
+  886  [2021-06-18 15:46:12] terraform apply
+  887  [2021-06-18 15:50:06] terraform destroy
+  888  [2021-06-18 15:51:02] vi main.tf 
+  889  [2021-06-18 15:51:16] terraform apply
+  890  [2021-06-18 15:52:55] vi main.tf 
+  891  [2021-06-18 15:54:41] terraform apply
+  892  [2021-06-18 15:58:12] vi micro.tf
+  893  [2021-06-18 15:58:50] vi main.tf 
+  894  [2021-06-18 15:59:11] vi micro.tf
+  895  [2021-06-18 16:00:36] terraform apply -var-file=micro.tf
+  896  [2021-06-18 16:01:21] ls
+  897  [2021-06-18 16:01:32] vi main.tf
+  898  [2021-06-18 16:01:46] vi micro.tf
+  899  [2021-06-18 16:03:17] mv micro.tf _override.tf
+  900  [2021-06-18 16:03:24] terraform apply
+  901  [2021-06-18 16:07:57] terraform destroy
+  902  [2021-06-18 16:08:36] rm  _override.tf
+  903  [2021-06-18 16:08:50] vi main.tf
+  904  [2021-06-18 16:10:55] terraform apply
+  905  [2021-06-18 16:16:41] terraform destroy
+  906  [2021-06-18 16:17:38] vi main.tf
+  907  [2021-06-18 16:18:25] terraform apply
+  908  [2021-06-18 16:19:52] terraform destroy -auto-approve
+  909* [2021-06-18 16:20:20] 
+  910  [2021-06-18 16:29:22] terraform destroy -auto-approve
+  911  [2021-06-18 18:30:07] sudo shutdown -h 
+  912  [2021-06-18 18:30:18] date
+  913  [2021-06-18 18:30:25] sudo shutdown -h -now
+  914  [2021-06-18 18:30:37] history
+  915  [2021-06-18 18:30:47] history > history2.txt 
