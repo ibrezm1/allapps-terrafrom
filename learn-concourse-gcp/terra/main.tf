@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("../secure/gcp-terrafrom-user.json")
+  credentials = file("../../secure/gcp-terrafrom-user.json")
 
   project = "symmetric-core-242320"
   region  = "us-central1"
@@ -21,7 +21,7 @@ provider "google" {
 
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-instance"
+  name         = "concourse-instance"
   machine_type = "e2-medium"
   #machine_type = "e2-micro"
   tags = ["http-server","https-server"]
@@ -39,7 +39,7 @@ resource "google_compute_instance" "vm_instance" {
   }
   
   #metadata_startup_script = "echo hi > /tmp/test.txt"
-  metadata_startup_script = "${file("./test.sh")}"
+  metadata_startup_script = "${file("./startup-script.sh")}"
 
   scheduling {
     automatic_restart   = false

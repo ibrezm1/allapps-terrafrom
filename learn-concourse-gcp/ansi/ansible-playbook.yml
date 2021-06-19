@@ -1,0 +1,25 @@
+---
+- name: Transfer and execute a script.
+  hosts: gcp-concourse
+  become: yes
+  tasks:
+     - name: Transfer the script
+       copy: src=./ansible-shellscript.sh dest=/tmp/ansible-shellscript.sh mode=0777
+
+       #     - name: Execute the script
+       #command: sh /tmp/ansible-shellscript.sh
+
+     - name: safely use templated variable to run command. Always use the quote filter to avoid injection issues.
+       command: echo $USER
+       register: myoutput
+
+- name: Update db servers
+  hosts: gcp-concourse
+  vars_files:
+    - ./creds.json
+
+  tasks:
+     - name: Ensure fly installation
+       #command: cf login -a https://api.de.a9s.eu -u ripocipur.norefosod@mentonit.net -p ripocipur.norefosod@mentonit.net -o ripocipur_norefosod_mentonit_net -s test
+       command: cf login -a {{cf_endpoint}} -u {{cf_user}} -p {{cf_pass}} -o {{cf_org}} -s {{cf_env}}
+
