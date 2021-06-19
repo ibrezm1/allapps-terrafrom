@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("../gcp-terrafrom-user.json")
+  credentials = file("../secure/gcp-terrafrom-user.json")
 
   project = "symmetric-core-242320"
   region  = "us-central1"
@@ -38,6 +38,8 @@ resource "google_compute_instance" "vm_instance" {
     }
   }
   
+  metadata_startup_script = "echo hi > /tmp/test.txt"
+
   scheduling {
     automatic_restart   = false
     preemptible         = true
